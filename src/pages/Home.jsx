@@ -17,6 +17,7 @@ const Home = () => {
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
         setExercises={setExercises}/>
+        <div>exercises is going to be called</div>
       <Exercises
         bodyPart={bodyPart}
         exercises={exercises}
