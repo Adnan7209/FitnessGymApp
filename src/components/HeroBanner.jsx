@@ -16,7 +16,7 @@ const HeroBanner = () => {
             sx={{fontSize:{lg:'44px', xs:'40px'}}} mb="23px" mt="30px">
             Sweat, Smile <br/> and Repeat
         </Typography>
-        <Typography fontSize="22px" lineHeight="35px" mb={2}>
+        <Typography fontSize="22px" lineHeight="35px" mb={4}>
             Check out the most effective exercises
         </Typography>
         <Button variant='contained' color='error' href='#excercises'
@@ -27,7 +27,8 @@ const HeroBanner = () => {
                         opacity:0.1,
                         display:{lg:'block', xs:'none'}
                     }}
-                    fontSize={200}  >
+                    fontSize={200}
+                    mt={2}  >
             Exercise
         </Typography>
         <img src={HeroBannerImage} alt='banner' className='hero-banner-img'  />
