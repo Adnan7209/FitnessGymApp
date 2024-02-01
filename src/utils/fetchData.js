@@ -6,9 +6,14 @@ export const exerciseOptions = {
     },
   };
 export const fetchData = async (url,options) => {
-    const response = await fetch(url,options);
-    const data = await response.json();
-    return data;
+    try {
+      const response = await fetch(url, options);
+      const result = await response.json();
+      console.log("fetchData(): Fetched succesfully, result: ",result);
+      return result;
+    } catch (error) {
+      console.error("fetchData(): Error occured",error);
+    }
 
 }
 
