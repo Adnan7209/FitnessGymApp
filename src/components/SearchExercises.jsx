@@ -51,7 +51,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
                 sx={{
                     input:{fontWeight:'900',border:'none', borderRadius:'4px'},
                     width:{lg:"800px" , xs:'350px'},
-                    backgroundColor:"#ffff",
+                    backgroundColor:"var(--color1)",
                     borderRadius:"40px"
                 }}
                 height="76px"
@@ -61,8 +61,8 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
                 type='text'
             />
             <Button className='search-btn'
-                sx={{ bgcolor:'#ff2625',
-                      color:"#fff",
+                sx={{ bgcolor:'var(--color3)',
+                      color:"var(--color4)",
                     textTransform:"none",
                     width:{lg:"140px", xs:"80px"},
                     fontSize:{lg:'20px', xs:'14px'},

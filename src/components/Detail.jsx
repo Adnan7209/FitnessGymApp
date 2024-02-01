@@ -39,7 +39,7 @@ const Detail = ({exerciseDetail}) => {
             {
                 extraDetail.map((item)=> (
                     <Stack key={item.index} direction="row" gap="24px" alignItems="center">
-                        <Button sx={{ background: '#FFF2DB', borderRadius: '50%', width: '100px', height: '100px' }}>
+                        <Button sx={{ background: 'var(--color1)', borderRadius: '50%', width: '100px', height: '100px' }}>
                             <img src={item.icon} />
                         </Button>
                         <Typography  textTransform="capitalize" sx={{ fontSize: { lg: '30px', xs: '20px' } }}>

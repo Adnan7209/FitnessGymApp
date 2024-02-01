@@ -1,6 +1,18 @@
+:root{
+  --color1:#490B3D;
+  --color2:#BD1E51;
+  --color3:#F1B814;
+  --color4:#fff;
+
+  /* #ff2625 */
+  /* #ffa9a9 */
+  /* #fcc757 */
+}
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    background-color: var(--color4)
+    /* #1D2228 */
+    /* #FFFAFB; */
   }
   
   * {
