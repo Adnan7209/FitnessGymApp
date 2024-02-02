@@ -52,14 +52,14 @@ const Detail = ({exerciseDetail}) => {
         </Stack>
         
     </Stack>
-    <Typography variant='h3'textTransform="capitalize" alignSelf='self-start' >
+    <Typography variant='h3'textTransform="capitalize" alignSelf='self-start' id="instructions">
             Instructions...
             
     </Typography>
-    <Stack mt="5px" gap={1.3} alignSelf='self-start' >
+    <Stack mt="5px" gap={1.3} alignSelf='self-start'  >
                 {
                     instructions?.map((instruction)=>(
-                        <Typography key={instruction.index} variant='h6' >
+                        <Typography key={instruction.index} variant='h6'  >
                             {instruction}
                         </Typography>
                     ))

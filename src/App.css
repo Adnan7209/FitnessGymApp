@@ -4,6 +4,14 @@
   --color3:#F1B814;
   --color4:#fff;
 
+  --color6:#FCD25C;
+  --color5:#ffffff;
+  
+  --color7:#FCDB67;
+  
+  
+  
+
   /* #ff2625 */
   /* #ffa9a9 */
   /* #fcc757 */
@@ -21,6 +29,8 @@ body {
     box-sizing: border-box;
   
   }
+  
+
   
   ::-webkit-scrollbar {
     width: 0px;
@@ -67,11 +77,14 @@ body {
   
   .hero-banner-img {
     position: absolute;
-    right: 40px;
-    top: 0px;
-    width: 700px;
-    height: 900px;
-    margin-top: -330px;
+    /* position: relative; */
+    left:-25px;
+    /* right: 0px; */
+    top:-205px;
+    width: 1540px;
+    height: 800px;
+    /* margin-top: 330px; */
+    z-index: -1;
   
   }
   
@@ -134,9 +147,9 @@ body {
       position: static !important;
     }
   
-    .hero-banner-img {
+    /* .hero-banner-img {
       display: none;
-    }
+    } */
   
     .exercise-card {
       width: 320px;
@@ -154,3 +167,20 @@ body {
       width: 280px;
     }
   }
+  @media screen and (max-width:720px) {
+    .hero-banner-img{
+      display: none;
+    }
+
+  }
+  @media screen and (min-width: 721px) and (max-width: 1024px) {
+    .hero-banner-img {
+      width: 1050px; 
+      height: 700px; 
+      position:absolute;
+      top: -210px;
+      left:0px
+
+    }
+  }
+    

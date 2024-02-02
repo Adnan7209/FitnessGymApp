@@ -12,13 +12,14 @@ const Home = () => {
   const [exercises, setExercises] = useState([]);
   console.log(bodyPart);
   return (
-    <Box>
+    <Box sx={{
+      // backgroundColor:"var(--color2)"
+      }}>
       <HeroBanner/>
       <SearchExercises 
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
         setExercises={setExercises}/>
-        <div>exercises is going to be called</div>
       <Exercises
         bodyPart={bodyPart}
         exercises={exercises}
