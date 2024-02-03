@@ -14,9 +14,19 @@ const BodyPart = ({item,setBodyPart,bodyPart}) => {
         sx={{
             borderTop: bodyPart === item ? '6px solid var(--color2)' :'',
             borderBottom: bodyPart === item ? '6px solid var(--color2)' :'',
-            borderRadius:"10px",
+            borderRadius:"60px",
+            // boxShadow: "",
+            // boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
+
+            // boxShadow: "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px",
+
+
+            boxShadow: "rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,rgb(38, 57, 77) 0px 20px 30px -10px",
+
+            
             // backgroundColor:"var(--color4)",
-            borderBottomLeftRadius:'20px',
+            // borderBottomLeftRadius:'20px',
+            // borderBottomRightRadius:'20px',
             width:'270px',
             height:'280px',
             gap:'47px',

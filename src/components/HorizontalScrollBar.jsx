@@ -59,6 +59,7 @@ const HorizontalScrollBar = ({data,bodyPart,setBodyPart,isBodyParts}) => {
                 m="0  20px"
                 sx={{
                   // border:'2px black solid'
+                  padding:"30px"
                 }}>
                     {
                         isBodyParts ? (
