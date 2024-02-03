@@ -9,11 +9,14 @@ const ExerciseCard = ({exercise}) => {
         <img src={exercise.gifUrl} alt={exercise.name} loading='lazy' />
         <Stack direction="row" justifyContent="center">
             <Button sx={{ml:'21px',color:'#fff',background:'var(--color3)',fontSize:'14px' ,borderRadius:'20px',textTransform:'capitalize',
+            boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
+            // boxShadow:' rgb(38, 57, 77) 0px 20px 30px -10px',
                         "&:hover":{background:'var(--color3)'}}}>
                 {exercise.bodyPart}
 
             </Button>
             <Button sx={{ml:'21px',color:'#fff',background:'var(--color2)',fontSize:'14px' ,borderRadius:'20px',textTransform:'capitalize',
+            boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
                           "&:hover":{background:'var(--color2)'}}}>
                 {exercise.target}
             </Button>

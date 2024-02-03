@@ -109,8 +109,8 @@ body {
     height: 445px;
     background: #fff;
     
-    border-bottom: 4px solid var(--color2);
-    border-top: 4px solid var(--color2);
+    /* border-bottom: 4px solid var(--color2); */
+    /* border-top: 4px solid var(--color2); */
     border-radius: 50px;
     text-decoration: none;
     display: flex;
@@ -119,10 +119,18 @@ body {
     padding-bottom: 10px;
     transform: scale(1, 1);
     transition: 0.4s all ease-in-out;
+
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
   .exercise-card img {
-    height: 326px;
+    /* height: 326px; */
+    padding:  10px 10px;
+    border-radius: 50px;
+    
+    width: 300px;
   }
   
   .bodyPart-card {
