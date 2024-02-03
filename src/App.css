@@ -79,15 +79,21 @@ body {
   }
   
   .detail-image {
-    width: 729px;
-    height: 742px;
+    width: 750px;
+    height: 680px;
     /* border: 1px solid var(--color2); */
     /* border-top: 4px solid var(--color2); */
-    border-bottom: 15px solid var(--color2);
+    /* border-bottom: 15px solid var(--color2); */
     /* border-left: 4px solid var(--color2); */
     border-right: 4px solid var(--color2);
     border-radius: 450px;
-    box-shadow: 30px 30px 50px -10px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 30px 30px 50px -10px rgba(0, 0, 0, 0.8); */
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset,rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset,rgb(38, 57, 77) 0px 20px 30px -10px,rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset; */
+    
+    
     padding: 50px;
   }
   
