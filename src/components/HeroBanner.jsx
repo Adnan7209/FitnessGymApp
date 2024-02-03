@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Stack , Typography, Button} from "@mui/material";
 import HeroBannerImage from "../assets/images/banner3.jpg"
 import { TypeAnimation } from 'react-type-animation';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 const HeroBanner = () => {
     const seq = [
@@ -31,16 +32,23 @@ const HeroBanner = () => {
         }} position="relative"
          p="20px"
          >
-        <Typography color="var(--color1)" fontWeight={600} fontSize="70px"
+            <Box
+            sx={{
+                padding:{lg:"20px 60px"}
+
+            }} 
+            >
+            <Typography color="var(--color2)" fontWeight={600} 
                     sx={{ 
-                        textShadow: '10px 10px 20px rgba(0, 0, 0, 1)',
+                        fontSize:{xs:"70px",lg:"100px"}
+                        // textShadow: '10px 10px 20px rgba(0, 0, 0, 1)',
                     }}
                     >
             Fitness Club
         </Typography>
         <Typography fontWeight={700}
-            color="var(--color2)"
-            sx={{fontSize:{lg:'44px', xs:'40px'}}} mb="23px" mt="30px">
+            color="var(--color1)"
+            sx={{fontSize:{lg:'64px', xs:'40px'}}} mb="23px" mt="30px">
                 <TypeAnimation
                 sequence={seq}  
                 repeat={Infinity}
@@ -54,13 +62,20 @@ const HeroBanner = () => {
             {/* Check out the most effective exercises */}
         </Typography>
         <Button variant='contained' 
+        endIcon={<ArrowForwardIosOutlinedIcon />}
         // color='error' 
         href='#excercises'
                 sx={{backgroundColor:'var(--color2)',
-                    '&:hover': {backgroundColor: 'var(--color2)'},
+                    padding:"10px 30px",
+                    '&:hover': {backgroundColor: 'var(--color1)'},
                     }}>
                         Explore Exercises
+                        
         </Button>
+
+            </Box>
+        
+        
         <Typography fontWeight={800}
                     color="var(--color2)"
                     sx={{

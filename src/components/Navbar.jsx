@@ -32,20 +32,21 @@ const Navbar = () => {
     <Stack 
       display="flex"
       gap="40px"
-      fontSize="35px"
+      fontSize="38px"
       alignItems="flex-end"
       justifyContent="space-evenly"
       sx={{flexDirection:{sm:"row",xs:"row"}}}
       >
-      <Link to="/" style={{textDecoration:'none', color:'var(--color1)', 
-      borderBottom: currentPath === '/' ? '3px solid var(--color2)' : 'none'
+      <Link to="/" style={{textDecoration:'none', color:'var(--color2)', 
+      borderBottom: currentPath === '/' ? '4px solid var(--color1)' : 'none',
+      // borderRadius:"20px"
       
       }}>Home</Link>
       {
         currentPath === '/' ? (
-          <a href="#exercises" style={{textDecoration:'none', color:'var(--color1)'}}>Exercises</a>
+          <a href="#exercises" style={{textDecoration:'none', color:'var(--color2)'}}>Exercises</a>
         ):(
-          <a href="#instructions" style={{textDecoration:'none', color:'var(--color1)'}}>Instructions</a>
+          <a href="#instructions" style={{textDecoration:'none', color:'var(--color2)'}}>Instructions</a>
         )
       }
     </Stack>

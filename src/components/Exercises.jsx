@@ -45,10 +45,25 @@ const Exercises = ({setExercises,bodyPart,exercises}) => {
       <Typography variant='h3' mb={5}
       sx={{
         color:"var(--color2)",
-        fontSize:"50px"
+        fontSize:"50px",
+        // boxShadow: "rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset",
+        padding:"50px 0",
+        
       }}
       >
+        <span
+        style={{
+          // borderRadius:"50px",
+          // padding:"15px 50px",
+          // boxShadow: "rgba(0, 0, 0, 0.56) 0px 22px 70px 4px",
+          // boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
+          // boxShadow: "rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset,rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
+          // boxShadow: "rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset",
+        }}
+        >
         Showing Results...
+        </span>
+        
       </Typography>
       <Stack direction="row" sx={{gap:{lg:'110px',xs:'50px',md:"80px"},mt:"50px"}}
       flexWrap="wrap" justifyContent="center">
