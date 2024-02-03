@@ -36,13 +36,21 @@ const Exercises = ({setExercises,bodyPart,exercises}) => {
   },[bodyPart]);
   return (
     <Box id="exercises"
-      sx={{mt:{lg:'110px'}}}
-      mt='50px'
-      p='20px'>
-      <Typography variant='h3' mb={5}>
+      sx={{mt:{xs:'50px',sm:"80px",md:"100px"},
+      mx:"20px"
+    }}
+      // mt='180px'
+      // p='20px'
+      >
+      <Typography variant='h3' mb={5}
+      sx={{
+        color:"var(--color2)",
+        fontSize:"50px"
+      }}
+      >
         Showing Results...
       </Typography>
-      <Stack direction="row" sx={{gap:{lg:'110px',xs:'50px'}}}
+      <Stack direction="row" sx={{gap:{lg:'110px',xs:'50px',md:"80px"},mt:"50px"}}
       flexWrap="wrap" justifyContent="center">
         {
           currentExercises  .map((exercise,index)=> (
@@ -54,7 +62,20 @@ const Exercises = ({setExercises,bodyPart,exercises}) => {
         {
           exercises.length > 9 && (
             <Pagination
-              color='standard'
+              sx={{
+                // color:'var(--color2)'
+                // '&.MuiPaginationItem-colorPrimary':{color:"var(--color2)"}
+                '& .MuiPaginationItem-root': {
+                  color: 'var(--color2)', // Change the color of the PaginationItem text
+                },
+                '& .MuiPaginationItem-root.Mui-selected': {
+                  backgroundColor: 'var(--color2)', // Change the background color of the selected PaginationItem
+                  color: 'var(--color4)', // Change the text color of the selected PaginationItem
+                  // border:"1px solid var(--color2)",
+                  borderRadius:"20px"
+                },
+              }}
+              // variant='outlined'
               shape='rounded'
               defaultPage={1}
               count={Math.ceil(exercises.length/exercisesPerPage)}
