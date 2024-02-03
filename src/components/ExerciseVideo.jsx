@@ -15,29 +15,38 @@ const ExerciseVideo = ({exerciseVideos,name}) => {
 
 
   return (
-    <Box sx={{marginTop:{lg:'200px',xs:'20px'}}} p="20px">
-        <Typography variant='h4' mb="33px">
-            Watch <span style={{color:'var(--color1)',textTransform:"capitalize"}}>{name}</span> exercise videos
+    <Box sx={{marginTop:{lg:'100px',sm:"50px",xs:'20px'}}} p="20px">
+        <Typography variant='h4' mb="33px"
+        sx={{color:"var(--color2)"}}
+        >
+            Watch <span style={{color:'var(--color2)',fontWeight:"800",textTransform:"capitalize"}}>{name}</span> exercise videos
         </Typography>
         <Stack justifyContent="flex-start" flexWrap="wrap" alignItems="center"
-            sx={{flexDirection:{lg:'row'},
-                gap:{lg:'110px', xs:'0'}}}>
+            sx={{flexDirection:{md:'row'},
+                gap:{lg:'110px', xs:'30px'}}}>
                     {
                         exerciseVideos?.slice(0,3).map((item,index)=>(
-                            <div key={index} className='exercise-video'>
+                            <Box key={index} className='exercise-video'
+                             m="10px"  
+                            //  sx={{width:{md:"400px"}}}
+                             >
                                 <iframe
                                     width="360px"
-                                    height="202px"
+                                    height="180px"
                                     src={`https://www.youtube.com/embed/${item.video.videoId}`}
                                     title={item.video.title}
                                     allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen>
                                 </iframe>
-                                <Box>
-                                    <Typography variant='h5' color='#000'>
+                                <Box sx={{color:"var(--color2)"}}>
+                                    <Typography variant='h5'
+                                    //  color='#000'
+                                     >
                                         {item.video.title}
                                     </Typography>
-                                    <Typography variant='h6' color='#000'>
+                                    <Typography variant='h6'
+                                    //  color='#000'
+                                     >
                                         {item.video.channelName}
                                     </Typography>
                                     <Stack direction="row" gap={4}>
@@ -45,12 +54,12 @@ const ExerciseVideo = ({exerciseVideos,name}) => {
                                         {formatViews(item.video.viewCountText)}
                                         <span> views</span>
                                     </Typography>
-                                    <Typography>
-                                        <span>Published </span>{item.video.publishedTimeText}
+                                    <Typography >
+                                    Published <span style={{fontStyle:"italic"}}>{item.video.publishedTimeText} </span>
                                     </Typography>
                                     </Stack>
                                 </Box>
-                            </div>
+                            </Box>
                         ))
                     } 
 
