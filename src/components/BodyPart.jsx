@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from "../assets/icons/gym.png"
+import Icon from "../assets/icons/gym1.png"
 import { Stack,Typography } from '@mui/material'
 
 const BodyPart = ({item,setBodyPart,bodyPart}) => {
@@ -12,13 +12,17 @@ const BodyPart = ({item,setBodyPart,bodyPart}) => {
         justifyContent="center"
         className="bodyPart-card"
         sx={{
-            borderTop: bodyPart === item ? '4px solid var(--color1)' :'',
-            backgroundColor:"var(--color4)",
+            borderTop: bodyPart === item ? '6px solid var(--color2)' :'',
+            borderBottom: bodyPart === item ? '6px solid var(--color2)' :'',
+            borderRadius:"10px",
+            // backgroundColor:"var(--color4)",
             borderBottomLeftRadius:'20px',
             width:'270px',
             height:'280px',
             gap:'47px',
             cursor:'pointer',
+            // m:"50px"
+            px:"20px"
             
         }
     }
@@ -27,8 +31,8 @@ const BodyPart = ({item,setBodyPart,bodyPart}) => {
             window.scrollTo({top:1800, left:100,behavior:'smooth'})  }}
         >
 
-        <img src={Icon} alt='dumbell' style={{width:'40px' , height:'40px'}}/>
-        <Typography fontSize="24px" fontWeight="bold" color="var(--color1)" textTransform="capitalize">
+        <img src={Icon} alt='dumbell' style={{width:'100px' , height:'100px'}}/>
+        <Typography fontSize="24px" fontWeight="bold" color="var(--color2)" textTransform="capitalize">
             {item}
         </Typography>
     </Stack>

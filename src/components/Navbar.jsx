@@ -38,7 +38,7 @@ const Navbar = () => {
       sx={{flexDirection:{sm:"row",xs:"row"}}}
       >
       <Link to="/" style={{textDecoration:'none', color:'var(--color1)', 
-      borderBottom: currentPath === '/' ? '3px solid var(--color1)' : 'none'
+      borderBottom: currentPath === '/' ? '3px solid var(--color2)' : 'none'
       
       }}>Home</Link>
       {

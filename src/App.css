@@ -1,8 +1,12 @@
 :root{
+  /* --color1:#761452; */
+  /* --color1:#7a2d6b; */
   --color1:#490B3D;
+  /* --color1:#490B3D; */
   --color2:#BD1E51;
   --color3:#F1B814;
   --color4:#fff;
+  /* --color5:white; */
 
   --color6:#FCD25C;
   --color5:#ffffff;
@@ -39,24 +43,25 @@ body {
   .right-arrow,
   .left-arrow {
     cursor: pointer;
-    background: transparent;
-    outline: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FF2625;
-    font-size: 25px;
-    border-radius: 4px;
+    /* background: transparent; */
+    /* outline: none; */
+    /* border: none; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* color: var(--color2); */
+    /* color: #58ca3c; */
+    /* font-size: 25px; */
+    /* border-radius: 4px; */
     position: absolute;
-    bottom: -20px;
-    right: 80px;
-    transform: scale(1, 1);
+    bottom: 0px;
+    left: 0px;
+    transform: scale(1,1);
     transition: 0.3s all ease-in-out;
   }
   
   .right-arrow {
-    right: 140px;
+    right: 240px;
   }
   
   .right-arrow:hover,
@@ -65,9 +70,10 @@ body {
   }
   
   .react-horizontal-scrolling-menu--wrapper {
+    /* width: 1000px;  */
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
   }
   
   .detail-image {
@@ -82,7 +88,7 @@ body {
     /* right: 0px; */
     top:-205px;
     width: 1540px;
-    height: 800px;
+    height: 700px;
     /* margin-top: 330px; */
     z-index: -1;
   
@@ -117,10 +123,10 @@ body {
     transform: scale(1.1, 1.1);
   }
   
-  .search-btn:hover {
+  /* .search-btn:hover {
     color: #FF2625 !important;
     border: 1px solid #FF2625 !important;
-  }
+  } */
   
   .exercise-video {
     display: flex;
@@ -173,7 +179,18 @@ body {
     }
 
   }
-  @media screen and (min-width: 721px) and (max-width: 1024px) {
+  @media screen and (min-width: 721px) and (max-width: 900px) {
+    .hero-banner-img {
+      width: 920px; 
+      height: 700px; 
+      position:absolute;
+      top: -210px;
+      left:0px
+
+    }
+  }
+    
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
     .hero-banner-img {
       width: 1050px; 
       height: 700px; 
