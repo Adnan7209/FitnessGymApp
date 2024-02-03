@@ -8,35 +8,68 @@ const SimilarExercises = ({targetMusclesExercises,equipmentExercises}) => {
     console.log("trget ",targetMusclesExercises);    
     console.log("equip ",equipmentExercises);
 
-  return (
-    <Box sx={{mt:{lg:'100px',xs:'5px'}}}>
-        <Typography variant='h3' mb={7}
-        sx={{color:"var(--color2)"}}
-        >Exercises that target the same muscle group</Typography>
-        <Stack direction="row" sx={{p:'2', position:'relative'}}>
-            {targetMusclesExercises.length ?(
-                <HorizontalScrollBar data={targetMusclesExercises} />
-            ):(
-                <Loader/>
-            )}
-
-        </Stack>
-        <Typography variant='h3' mb={7} mt={15}
-        sx={{color:"var(--color2)"}}
-        >Exercises that use the same equipment</Typography >
-        <Stack direction="row" sx={{p:'2', position:'relative',
-        // m:"50px",
-        // gap:"25px"
-        }}>
-            {equipmentExercises.length ?(
-                <HorizontalScrollBar data={equipmentExercises} />
-            ):(
-                <Loader/>
-            )}
-
-        </Stack>
-    </Box>
-  )
+    return (
+        <Box 
+            sx=
+            {{
+                mt:{lg:'100px',xs:'5px'}
+            }}
+        >
+            <Typography 
+                variant='h3' 
+                mb={7}
+                sx=
+                {{
+                    color:"var(--color2)"
+                }}
+            >
+                Exercises that target the same muscle group
+            </Typography>
+            <Stack 
+                direction="row" 
+                sx=
+                {{
+                    p:'2', 
+                    position:'relative'
+                }}
+            >
+                {
+                    targetMusclesExercises.length ?(
+                        <HorizontalScrollBar data={targetMusclesExercises} />
+                    ):(
+                        <Loader/>
+                    )
+                }
+            </Stack>
+            <Typography 
+                variant='h3' 
+                mb={7} 
+                mt={15}
+                sx=
+                {{
+                    color:"var(--color2)"
+                }}
+            >
+                Exercises that use the same equipment
+            </Typography >
+            <Stack 
+                direction="row" 
+                sx=
+                {{
+                    p:'2', 
+                    position:'relative',
+                }}
+            >
+                {
+                    equipmentExercises.length ?(
+                        <HorizontalScrollBar data={equipmentExercises} />
+                    ):(
+                        <Loader/>
+                    )
+                }
+            </Stack>
+        </Box>
+    )
 }
 
 export default SimilarExercises

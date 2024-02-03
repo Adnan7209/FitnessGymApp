@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
-import { Box } from '@mui/material';
-import { Search } from '@mui/icons-material';
+import { Box } from '@mui/material'
 
 import HeroBanner from '../components/HeroBanner';
 import SearchExercises from '../components/SearchExercises';
@@ -12,18 +11,18 @@ const Home = () => {
   const [exercises, setExercises] = useState([]);
   console.log(bodyPart);
   return (
-    <Box sx={{
-      // backgroundColor:"var(--color2)"
-      }}>
+    <Box >
       <HeroBanner/>
       <SearchExercises 
         bodyPart={bodyPart}
         setBodyPart={setBodyPart}
-        setExercises={setExercises}/>
+        setExercises={setExercises}
+      />
       <Exercises
         bodyPart={bodyPart}
         exercises={exercises}
-        setExercises={setExercises}/>
+        setExercises={setExercises}
+      />
     </Box>
   )
 }
