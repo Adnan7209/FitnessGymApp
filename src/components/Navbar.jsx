@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {Link, useLocation} from 'react-router-dom';
-import { Stack, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
 import Logo from "../assets/images/logo2.png"
 
 const Navbar = () => {
