@@ -193,4 +193,13 @@ body {
 
     }
   }
-    
+  
+  /* .navbarContent:hover{
+    transform= scale(1.2,1.2),
+              transition=all 0.4s
+  } */
+
+  .navbarContent:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.4s;
+  }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import {Link, useLocation} from 'react-router-dom';
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 import Logo from "../assets/images/logo2.png"
 
 const Navbar = () => {
@@ -53,22 +53,23 @@ const Navbar = () => {
         }}
       >
         <Link 
-          to="/" 
+          to="/"
+          className='navbarContent' 
           style=
           {{
             textDecoration:'none', 
             color:'var(--color2)', 
-            borderBottom: currentPath === '/' ? '4px solid var(--color1)' : 'none',
+            borderBottom: currentPath === '/' ? '4px solid var(--color2)' : 'none',
           }}
-        >
+        >  
           Home
         </Link>
         {
           currentPath === '/' ? 
           (
-            <a href="#exercises" style={{textDecoration:'none', color:'var(--color2)'}}>Exercises</a>
+            <a href="#exercises" className='navbarContent' style={{textDecoration:'none', color:'var(--color2)'}}>Exercises</a>
           ):(
-            <a href="#instructions" style={{textDecoration:'none', color:'var(--color2)'}}>Instructions</a>
+            <a href="#instructions" className='navbarContent' style={{textDecoration:'none', color:'var(--color2)'}}>Instructions</a>
           )
         }
       </Stack>
