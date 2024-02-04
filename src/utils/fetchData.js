@@ -12,6 +12,7 @@ export const fetchData = async (url,options) => {
       console.log("fetchData(): Fetched succesfully, result: ",result);
       return result;
     } catch (error) {
+      alert("Unable to fetch data");
       console.error("fetchData(): Error occured",error);
     }
 
