@@ -67,9 +67,23 @@ const Navbar = () => {
         {
           currentPath === '/' ? 
           (
-            <a href="#exercises" className='navbarContent' style={{textDecoration:'none', color:'var(--color2)'}}>Exercises</a>
+            <a 
+              // href="#exercises" 
+              className='navbarContent' 
+              style={{textDecoration:'none', color:'var(--color2)'}}
+              onClick={() => document.getElementById('exercises').scrollIntoView({ behavior: 'smooth' })}
+            >
+              Exercises
+            </a>
           ):(
-            <a href="#instructions" className='navbarContent' style={{textDecoration:'none', color:'var(--color2)'}}>Instructions</a>
+            <a 
+              // href="#instructions" 
+              className='navbarContent' 
+              style={{textDecoration:'none', color:'var(--color2)'}}
+              onClick={() => document.getElementById('instructions').scrollIntoView({ behavior: 'smooth' })}
+            >
+              Instructions
+            </a>
           )
         }
       </Stack>

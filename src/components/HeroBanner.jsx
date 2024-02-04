@@ -36,7 +36,7 @@ const HeroBanner = () => {
                 <Typography 
                     color="var(--color2)" 
                     fontWeight={600} 
-                    sx={{ 
+                    sx={{
                         fontSize:{xs:"70px",lg:"100px"}
                     }}
                 >
@@ -76,15 +76,20 @@ const HeroBanner = () => {
                 <Button 
                     variant='contained' 
                     endIcon={<ArrowForwardIosOutlinedIcon />}
-                    href='#excercises'
+                    onClick={() => document.getElementById('searchExercises').scrollIntoView({ behavior: 'smooth' })}
                     sx=
                     {{
                         backgroundColor:'var(--color2)',
                         padding:"10px 30px",
+                        boxShadow: "rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px",
                         '&:hover': {
-                            backgroundColor: 'var(--color1)'
+                            backgroundColor: 'var(--color2)',
+                            transform:'scale(1.1,1.1)',
+                            transition:"all 0.4s",
+                            boxShadow: "rgb(38, 57, 77) 0px 20px 30px -10px",
                         },
                     }}
+
                 >
                     Explore Exercises
                 </Button>

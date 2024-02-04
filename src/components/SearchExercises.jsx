@@ -33,6 +33,8 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
             console.log("Data",exercisesData);
             console.log("searched exercises",searchedExercises);
             setExercises(searchedExercises);
+            document.getElementById('exercises').scrollIntoView({ behavior: 'smooth' })
+            // onClick={() => document.getElementById('exercises').scrollIntoView({ behavior: 'smooth' })}
         }
     }
   return (
@@ -45,6 +47,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
         justifyContent="center"
     >
         <Typography 
+            id="searchExercises"
             fontWeight={700} 
             sx={{
                 fontSize:{lg:'44px',xs:'30px'},
