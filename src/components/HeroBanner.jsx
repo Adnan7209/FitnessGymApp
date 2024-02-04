@@ -41,7 +41,7 @@ const HeroBanner = () => {
                 <Box
                     sx=
                     {{
-                        padding:{lg:"20px 60px"}
+                        padding:{md:"20px 60px"}
                     }} 
                 >
                     <Typography 

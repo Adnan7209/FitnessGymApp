@@ -111,7 +111,7 @@ const SearchExercises = ({setExercises, bodyPart, setBodyPart}) => {
             {{
                 position:'relative',
                 width:'100%',
-                ml:{xs:"120px",sm:"150px",md:"350px",lg:"50px"}
+                ml:{xs:"120px",sm:"150px",md:"50px",lg:"50px"},
             }
         }>
             <HorizontalScrollBar 
