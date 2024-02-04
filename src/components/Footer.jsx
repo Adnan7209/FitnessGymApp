@@ -38,7 +38,7 @@ const Footer = () => {
       sx=
       {{
         color:"var(--color4)",
-        width:{xs:"115vw",sm:"120vw",sm:"121vw"},  
+        width:{xs:"115vw",sm:"120vw",md:"121vw"},  
       }}
     > 
       <Stack 

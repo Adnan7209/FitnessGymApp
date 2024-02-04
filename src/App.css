@@ -42,7 +42,7 @@ body {
     position: absolute;
     left:-25px;
     top:-205px;
-    width: 1540px;
+    width: 1580px;
     height: 800px;
     z-index: -1;
   
@@ -149,7 +149,7 @@ body {
 
     }
   }
-  
+
   .navbarContent:hover {
     transform: scale(1.2, 1.2);
     transition: all 0.4s;
